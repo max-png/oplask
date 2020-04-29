@@ -5,11 +5,10 @@ body{
 }
 
 .wrapper{
-    
     margin: 0 auto;
     background-color: white;
     width: 414px;
-    height: 896px;
+    min-height: 896px;
     background-image: url(../mockbilder/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,7 +75,7 @@ label::before{
     top: 0;
     bottom: 0;
     width: 20px;
-    background:url('/svg/search-outline.svg');
+    background:url('../svg/search-outline.svg');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -87,4 +86,17 @@ input{
     border-radius: 7px;
     border: 0px;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.image{
+    background-image: url('../mockbilder/us.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 394px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.prototype{
+
 }
