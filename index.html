@@ -37,16 +37,42 @@
         <main>
             <h1>Oplask</h1>
             <p>En öppen tolkning av Unsplash, driven av skapare överallt.</p>
-            <label>
-                <input type="text" placeholder="Sök efter något...">
-            </label>
 
-            <section class="imgContainer">
-                <article class="image prototype">bild här</article>
+            <div class="search-container">
+                <button class="search left"></button>
+                <input class="searchInput" type="text" placeholder="Sök efter något...">
+                <button class="search right"></button>
+            </div>
+
+            <section class="search-result-container">
+
+                <article class="result-image list-view prototype">
+                    <div class="top">
+                        <p class="owner">Artist</p>
+                        <button class="like">
+                            <svg class="button-icon" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+                                <title>My loves</title>
+                                <path
+                                    d='M352.92,80C288,80,256,144,256,144s-32-64-96.92-64C106.32,80,64.54,124.14,64,176.81c-1.1,109.33,86.73,187.08,183,252.42a16,16,0,0,0,18,0c96.26-65.34,184.09-143.09,183-252.42C447.46,124.14,405.68,80,352.92,80Z' />
+                            </svg>
+                        </button>
+                        <button class="like">
+                            <svg class="button-icon" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+                                <title>Download</title>
+                                <path d='M320,336h76c55,0,100-21.21,100-75.6s-53-73.47-96-75.6C391.11,99.74,329,48,256,48c-69,0-113.44,45.79-128,91.2-60,5.7-112,35.88-112,98.4S70,336,136,336h56' /><polyline points='192 400.1 256 464 320 400.1'/><line x1='256' y1='224' x2='256' y2='448.03'/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="img-container">
+                    <img src="https://source.unsplash.com/W10_NCsLVyc/800*200"
+                        alt="">
+                    </div>
+                </article>
             </section>
 
         </main>
     </div>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
