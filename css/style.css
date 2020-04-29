@@ -89,14 +89,15 @@ input{
 }
 
 .image{
-    background-image: url('../mockbilder/us.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 12px;
+    
     width: 394px;
     height: 400px;
-    margin: 0 auto;
 }
 
 .prototype{
-
+    background-image: url('../mockbilder/us.jpg');
+    display: none;
 }
