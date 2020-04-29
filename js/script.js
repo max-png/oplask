@@ -22,7 +22,7 @@ function renderSearchResult(results) {
 function createAndAddImage(url) {
     let newImage = document.createElement("img")
     newImage.src = url
-    document.querySelector(".imgContainer").appendChild(newImage);
+    document.querySelector(".imgContainer").appendChild(newImage); //ändra .imgContainer till classsen bilderna ska vara i
 }
 
 
