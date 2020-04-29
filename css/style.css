@@ -10,7 +10,7 @@ body{
     background-color: white;
     width: 414px;
     height: 896px;
-    background-image: url(/mockbilder/bg.jpg);
+    background-image: url(../mockbilder/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
