@@ -8,8 +8,8 @@ img {
     z-index: 0;
 }
 
-.lightbox-background {
-    display: block;
+.lightbox-container {
+    display: none;
     background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     min-width: 100%;

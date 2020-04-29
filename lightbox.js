@@ -192,7 +192,11 @@ let localStorageResults = [
 
 
   const body = document.querySelector("body");
-  const lightboxBG = document.querySelector(".lightbox-background");
+  const lightboxBG = document.querySelector(".lightbox-container");
+  const lightboxClosBtn = lightboxBG.querySelector("button.close");
+  lightboxClosBtn.addEventListener("click", (event)  => {
+    document.querySelector(".lightbox-container").style.display = "none";
+  })
 
 
  
@@ -204,10 +208,12 @@ let localStorageResults = [
         resultImage.classList.add("result-thumb")
         resultImage.src = image.urls.thumb
         resultImage.addEventListener("click", (event) => {
-            event.target
+            document.querySelector(".lightbox-container").style.display = "block";
+            document.querySelector(".lightbox-container").style.display = "block";
+
         });
 
-        container.prepend(resultImage)
+        container.append(resultImage)
       });
   }
 
