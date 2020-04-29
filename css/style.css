@@ -1,0 +1,45 @@
+body{
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    margin: 0 auto;
+    background-color: white;
+    width: 414px;
+    height: 896px;
+    background-image: url(/mockbilder/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar{
+    padding: 12px;
+    display: flex;
+    background-color: white;
+    height: 43px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar>button{
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    border: none;
+    background-color: white;
+    background-size: cover;
+}
+
+.button-icon{
+    fill:none;
+    stroke:#a7a7a7;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width:34px
+}
+
+.button-icon:hover{
+    stroke:black;
+}
