@@ -75,14 +75,15 @@ function renderSearchResult(results, container) {
 function createAndAddImage(result, container) {
     let newImage = imagePrototypeListView.cloneNode(true)
     newImage.classList.remove("prototype")
-    let favourtieSymbol = newImage.querySelector("svg.button-icon")
+    let favourtieButton = newImage.querySelector("button.like")
     newImage.querySelector("p.owner").innerHTML = `${result.user.name}`
     newImage.querySelector(".img-container>img").src = `${result.urls.small}`
-    newImage.querySelector("button.like").addEventListener("click", (event) => {
+    newImage.querySelector("svg.button-icon").addEventListener("click", (event) => {
+        if (favourtieButton.classList == "like") {
             addToFavourite(result)
-            favourtieSymbol.classList.toggle("true")
-            // alert(`${JSON.stringify(result)}`)
-        })
+        } else { removeFromFavourite(result) }
+        favourtieButton.classList.toggle("true")
+    })
     newImage.querySelector(".download").href = `${result.links.download}?force=true`
 
     container.appendChild(newImage)
@@ -104,7 +105,7 @@ function addToFavourite(imageToAdd) {
     console.log(`Favoritlista har ${localStorageFavourties.length} objekt innan`)
     localStorageFavourties.push(createObjectToStore(imageToAdd))
     console.log(`Favoritlista har nu ${localStorageFavourties.length} objekt istället`)
-    // console.log(JSON.stringify(localStorageFavourties))
+    console.log(JSON.stringify(localStorageFavourties))
 }
 
 function removeFromFavourite(imageToRemove) {
@@ -132,5 +133,12 @@ homeButton.addEventListener("click", function () {
     console.log("Clear")
     clear()
 })
+
+likesButton.addEventListener("click", function () {
+    console.log("Clear")
+    clear()
+    renderSearchResult(localStorageFavourties, resultContainer)
+})
+
 
 console.log(imagePrototypeListView)
