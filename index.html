@@ -19,7 +19,7 @@
                         d='M80,212V448a16,16,0,0,0,16,16h96V328a24,24,0,0,1,24-24h80a24,24,0,0,1,24,24V464h96a16,16,0,0,0,16-16V212 M480,256,266.89,52c-5-5.28-16.69-5.34-21.78,0L32,256' />
                 </svg>
             </button>
-            <button class="like">
+            <button class="myLikes">
                 <svg class="button-icon" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
                     <title>My loves</title>
                     <path
@@ -43,25 +43,24 @@
                 <input class="searchInput" type="text" placeholder="Sök efter något...">
                 <button class="search right"></button>
             </div>
-
+            <h2 class="subTitle"></h2>
             <section class="search-result-container">
-
                 <article class="result-image list-view prototype">
                     <div class="top">
                         <p class="owner">Artist</p>
                         <button class="like">
                             <svg class="button-icon" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
-                                <title>My loves</title>
+                                <title>Love this</title>
                                 <path
                                     d='M352.92,80C288,80,256,144,256,144s-32-64-96.92-64C106.32,80,64.54,124.14,64,176.81c-1.1,109.33,86.73,187.08,183,252.42a16,16,0,0,0,18,0c96.26-65.34,184.09-143.09,183-252.42C447.46,124.14,405.68,80,352.92,80Z' />
                             </svg>
                         </button>
-                        <button class="like">
+                        <a href= "" download class="download">
                             <svg class="button-icon" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
                                 <title>Download</title>
                                 <path d='M320,336h76c55,0,100-21.21,100-75.6s-53-73.47-96-75.6C391.11,99.74,329,48,256,48c-69,0-113.44,45.79-128,91.2-60,5.7-112,35.88-112,98.4S70,336,136,336h56' /><polyline points='192 400.1 256 464 320 400.1'/><line x1='256' y1='224' x2='256' y2='448.03'/>
                             </svg>
-                        </button>
+                        </a>
                     </div>
                     <div class="img-container">
                     <img src="https://source.unsplash.com/W10_NCsLVyc/800*200"
@@ -69,8 +68,8 @@
                     </div>
                 </article>
             </section>
-
         </main>
+        
     </div>
     <script src="./js/script.js"></script>
 </body>
